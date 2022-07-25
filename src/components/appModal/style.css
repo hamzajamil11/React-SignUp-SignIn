@@ -1,0 +1,123 @@
+.modals.show-this-flex{
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+  left: 0;
+  position: fixed;
+  top: 0;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  right: 0;
+  bottom: 0;
+}
+.modals .overlay {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.46;
+  background: #C2C2C2;
+}
+.box-modal {
+  z-index: 99;
+  width: 450px !important;
+  margin: auto;
+  min-width: 450px;
+  background: #ffffff;
+  box-shadow: 0 37px 70px 0 rgba(16, 37, 62, 0.22),
+    0 0 20px 0 rgba(0, 0, 0, 0.09);
+  border-radius: 3px;
+  width: 77.5%;
+  position: relative;
+}
+
+.edit {
+  width: 450px !important;  
+}
+.box-modal .install-step-1,
+.box-modal .install-step-2 {
+  padding: 20px;
+}
+.box-modal-header {
+  margin-top: 10px; 
+}
+.box-modal-header,
+.box-modal-footer {
+  width: 100%;
+}
+.box-modal-footer {
+  text-align: right;
+}
+.box-modal-footer .group-button .button{
+  margin: 0 5px;
+}
+.box-modal-footer .group-button .button:first-child{
+  margin-left: 0;
+}
+.box-modal-footer .group-button .button:last-child{
+  margin-right: 0;
+}
+.box-modal {
+  font-size: 16px;
+  font-weight: 600;
+  color: #C2C2C2;
+}
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: 'Futura Maxi CG';
+  color: #222223;
+}
+.box-modal .description {
+  font-size: 10px;
+  color: #C2C2C2;
+  line-height: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 0 20px;
+}
+.box-modal .group-button {
+  display: inline-block;
+}
+.box-modal-content {
+  margin-bottom: 20px;
+}
+.box-modal-content.channels{
+  max-height: 516px;
+}
+.box-modal .content-category {
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 375px){
+	.box-line {
+        width: 100%;
+    }	
+    .box-modal {
+      width: 300px;
+      min-width: 300px;
+  }
+}
+.modal-close{
+  margin-right: 15px;
+}
+.hide-this {
+  display: none !important;
+}
+.show-this-flex {
+  display: flex !important;
+}
+
+.close-modal {
+  text-align: right;
+  margin-right: 10px;
+}
+
+.overlay-signin {
+  background-image: linear-gradient(-137deg, #69CED4, #6AAC4B, #84C986, #65B1BB, #78B06F) !important;
+}
